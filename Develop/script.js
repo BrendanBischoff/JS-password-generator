@@ -14,7 +14,7 @@ var numArr = num.split("");
 // User Instructions
 
 window.onload = alert("Welcome! Please click 'Generate password' to begin!");
-
+// add user instructions here 
 
 
 
