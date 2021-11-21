@@ -5,4 +5,4 @@ ween 8-150 depending on their password needs.
 
 This is a simple application built with Javascript, HTML, and CSS.
 
-See the deployed application here: 
+See the deployed application here: https://brendanbischoff.github.io/JS-password-generator/
