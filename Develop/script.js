@@ -27,3 +27,18 @@ function generatePassword() {
       // Repeat to user how many characters password will contain 
       alert(`Your password will have ${confirmLength} characters`);
     }
+
+        // Determine requirements of password 
+        var confirmSpecialCharacter = confirm("Click OK to include special characters. Click 'Cancel' if you do NOT want to include special characters.");
+        var confirmNumericCharacter = confirm("Click OK to include numeric characters. Click 'Cancel' if you do NOT want to include numeric characters.");    
+        var confirmLowerCase = confirm("Click OK to include lowercase characters. Click 'Cancel' if you do NOT want to include lowercase characters.");
+        var confirmUpperCase = confirm("Click OK to include uppercase characters. Click 'Cancel' if you do NOT want to include uppercase characters.");
+          // Loop if answer is outside requirements
+          while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
+            alert("You must choose at least one parameter");
+            var confirmSpecialCharacter = confirm("Click OK to include special characters. Click 'Cancel' if you do NOT want to include special characters.");
+            var confirmNumericCharacter = confirm("Click OK to include numeric characters. Click 'Cancel' if you do NOT want to include numeric characters.");    
+            var confirmLowerCase = confirm("Click OK to include lowercase characters. Click 'Cancel' if you do NOT want to include lowercase characters.");
+            var confirmUpperCase = confirm("Click OK to include uppercase characters. Click 'Cancel' if you do NOT want to include uppercase characters.");   
+        } 
+    
